@@ -1,0 +1,31 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>{% block title %}{% trans "Маджонг Авто" %}{% endblock %}</title>
+      <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+      <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+      <link href='{% static "bootstrap/css/bootstrap-icons.css" %}' rel="stylesheet">
+      <script src='{% static "bootstrap/js/bootstrap.js" %}'></script>
+      <script src='{% static "bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+      <script src='{% static "js/custom.js" %}'></script>
+      <link rel="icon" type="image" href='{% static "/img/logo.svg" %}'/>
+    </head>
+    <body>
+
+      {% include "includes/header.html" %}
+
+      <main class="container py-5">
+
+        {% block content %} Dont load {% endblock %}
+
+      </main>
+
+      {% include "includes/footer.html" %}
+
+    </body>
+  </html>

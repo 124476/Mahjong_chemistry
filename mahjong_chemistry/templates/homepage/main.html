@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "Главная" %}{% endblock %}
+
+{% block content %}
+<div class="text-center">
+  <h1 class="display-4">{% trans "Добро пожаловать в Маджонг Химимя!" %}</h1>
+  <p class="lead">{% trans "Уникальная игра, где вы узнаете удивительные факты о химических элементах." %}</p>
+  <div class="my-4">
+    <a href="{% url 'game:games' %}" class="btn btn-success btn-lg me-2">
+      <i class="bi bi-controller"></i> {% trans "Начать игру" %}
+    </a>
+    <a href="{% url 'game:rules' %}" class="btn btn-primary btn-lg">
+      <i class="bi bi-question-circle"></i> {% trans "Правила игры" %}
+    </a>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-md-4">
+    <div class="card">
+      <img src="{% static 'img/elements.png' %}" class="card-img-top" alt="{% trans 'Химические элементы' %}">
+      <div class="card-body">
+        <h5 class="card-title">{% trans "Изучите элементы" %}</h5>
+        <p class="card-text">{% trans "Играйте и узнавайте интересные факты о каждом химическом элементе таблицы Менделеева!" %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="{% static 'img/mahjong.png' %}" class="card-img-top" alt="{% trans 'Маджонг' %}">
+      <div class="card-body">
+        <h5 class="card-title">{% trans "О Маджонге Химимя" %}</h5>
+        <p class="card-text">{% trans "Маджонг Химимя — это увлекательная игра, где вы соединяете элементы и узнаёте их свойства и применение в реальной жизни!" %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="{% static 'img/champion.png' %}" class="card-img-top" alt="{% trans 'Победители' %}">
+      <div class="card-body">
+        <h5 class="card-title">{% trans "Соберите таблицу" %}</h5>
+        <p class="card-text">{% trans "Завершите всю таблицу Менделеева, изучите химические элементы и станьте мастером химии!" %}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

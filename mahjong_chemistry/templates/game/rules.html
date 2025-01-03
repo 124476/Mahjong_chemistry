@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Правила" %}{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+  <h2 class="text-center mb-4">{% trans "Правила игры" %}</h2>
+
+  <div class="card mb-4 custom-card">
+    <div class="card-header bg-info text-white">
+      <h3 class="card-title mb-0">
+        <i class="bi bi-question-circle"></i> {% trans "Как играть?" %}
+      </h3>
+    </div>
+    <div class="card-body">
+      <p>{% trans "В этой игре вам нужно находить одинаковые плитки и соединять их. Когда вы находите пару, плитки исчезают. Вы должны сделать это как можно быстрее, используя минимальное количество перемешиваний!" %}</p>
+      <ul class="list-group custom-list">
+        <li class="list-group-item">
+          <i class="bi bi-play-circle text-success"></i> {% trans "Нажимайте на плитки, чтобы выбрать их." %}
+        </li>
+        <li class="list-group-item">
+          <i class="bi bi-arrow-clockwise text-primary"></i> {% trans "Используйте кнопку 'Перемешать', если вы не можете найти пару." %}
+        </li>
+        <li class="list-group-item">
+          <i class="bi bi-arrow-undo text-warning"></i> {% trans "Если вам нужно вернуться к предыдущему ходу, используйте кнопку 'Отменить'." %}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-4 custom-card">
+    <div class="card-header bg-warning text-white">
+      <h3 class="card-title mb-0">
+        <i class="bi bi-trophy-fill"></i> {% trans "Цель игры" %}
+      </h3>
+    </div>
+    <div class="card-body">
+      <p>{% trans "Найдите все пары плиток за наименьшее количество времени и с минимальным числом перемешиваний!" %}</p>
+    </div>
+  </div>
+
+  <div class="card custom-card">
+    <div class="card-header bg-danger text-white">
+      <h3 class="card-title mb-0">
+        <i class="bi bi-exclamation-circle"></i> {% trans "Обратите внимание" %}
+      </h3>
+    </div>
+    <div class="card-body">
+      <p>{% trans "Вы не сможете отменить действия после завершения игры." %}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
