@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 21:02+0300\n"
+"POT-Creation-Date: 2025-01-10 20:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\mahjong_atom\settings.py:106
+#: .\mahjong_chemistry\settings.py:106
 msgid "Английский"
 msgstr "English"
 
-#: .\mahjong_atom\settings.py:107
+#: .\mahjong_chemistry\settings.py:107
 msgid "Русский"
 msgstr "Russian"
 
-#: .\templates\base.html:8 .\templates\includes\header.html:7
+#: .\templates\base.html:8
 msgid "Маджонг Авто"
 msgstr "Mahjong Auto"
 
@@ -50,11 +50,11 @@ msgstr "Shuffle the tiles"
 msgid "Отмена хода"
 msgstr "Undo move"
 
-#: .\templates\game\games.html:4 .\templates\includes\header.html:11
+#: .\templates\game\games.html:4 .\templates\includes\header.html:13
 msgid "Уровни"
 msgstr "Levels"
 
-#: .\templates\game\games.html:9 .\templates\homepage\main.html:13
+#: .\templates\game\games.html:9
 msgid "Игры"
 msgstr "Games"
 
@@ -70,7 +70,7 @@ msgstr "Medium"
 msgid "Сложная игра"
 msgstr "Hard"
 
-#: .\templates\game\results.html:4 .\templates\includes\header.html:13
+#: .\templates\game\results.html:4 .\templates\includes\header.html:15
 msgid "Результаты"
 msgstr "Results"
 
@@ -141,7 +141,7 @@ msgstr "Unknown"
 msgid "кол."
 msgstr "count"
 
-#: .\templates\game\rules.html:4 .\templates\includes\header.html:12
+#: .\templates\game\rules.html:4 .\templates\includes\header.html:14
 msgid "Правила"
 msgstr "Rules"
 
@@ -149,56 +149,38 @@ msgstr "Rules"
 msgid "Правила игры"
 msgstr "Rules of the game"
 
-#: .\templates\game\rules.html:12
+#: .\templates\game\rules.html:14
 msgid "Как играть?"
 msgstr "How to play?"
 
-#: .\templates\game\rules.html:15
-msgid "Основные правила:"
-msgstr "Main rules:"
-
-#: .\templates\game\rules.html:16
+#: .\templates\game\rules.html:18
 msgid ""
 "В этой игре вам нужно находить одинаковые плитки и соединять их. Когда вы "
-"находите пару, плитки исчезают. При этом вы увидите краткую историю данного "
-"бренда. Вы должны сделать это как можно быстрее, используя минимальное "
-"количество перемешиваний!"
+"находите пару, плитки исчезают. Вы должны сделать это как можно быстрее, "
+"используя минимальное количество перемешиваний!"
 msgstr ""
 "In this game you need to find identical tiles and connect them. When you "
-"find a pair, the tiles disappear. At the same time, you will see a short "
-"history of this brand. You must do this as quickly as possible, using a "
-"minimum number of shuffles!"
+"find a pair, the tiles disappear. You must do this as quickly as possible, "
+"using the minimum number of shuffles!"
 
-#: .\templates\game\rules.html:18
+#: .\templates\game\rules.html:21
 msgid "Нажимайте на плитки, чтобы выбрать их."
 msgstr "Click on tiles to select them."
 
-#: .\templates\game\rules.html:19
+#: .\templates\game\rules.html:24
 msgid "Используйте кнопку 'Перемешать', если вы не можете найти пару."
 msgstr "Use the 'Shuffle' button if you can't find a pair."
 
-#: .\templates\game\rules.html:20
+#: .\templates\game\rules.html:27
 msgid ""
 "Если вам нужно вернуться к предыдущему ходу, используйте кнопку 'Отменить'."
 msgstr "If you need to go back to a previous move, use the 'Undo' button."
 
-#: .\templates\game\rules.html:22
-msgid "Управление:"
-msgstr "Control:"
+#: .\templates\game\rules.html:36
+msgid "Цель игры"
+msgstr "The goal of the game"
 
-#: .\templates\game\rules.html:26
-msgid "Перемешать плитки"
-msgstr "Shuffle the tiles"
-
-#: .\templates\game\rules.html:30
-msgid "Отменить действие"
-msgstr "Undo action"
-
-#: .\templates\game\rules.html:33
-msgid "Цель игры:"
-msgstr "Objective of the game:"
-
-#: .\templates\game\rules.html:34
+#: .\templates\game\rules.html:40
 msgid ""
 "Найдите все пары плиток за наименьшее количество времени и с минимальным "
 "числом перемешиваний!"
@@ -206,85 +188,118 @@ msgstr ""
 "Find all pairs of tiles in the least amount of time and with the least "
 "number of shuffles!"
 
-#: .\templates\game\rules.html:36
-msgid ""
-"Обратите внимание: вы не сможете отменить действия после завершения игры."
-msgstr ""
-"Please note: You will not be able to undo your actions once the game is over."
+#: .\templates\game\rules.html:47
+msgid "Обратите внимание"
+msgstr "Please note"
 
-#: .\templates\homepage\main.html:5 .\templates\includes\header.html:10
+#: .\templates\game\rules.html:51
+msgid "Вы не сможете отменить действия после завершения игры."
+msgstr ""
+"You will not be able to undo actions after the game is over."
+
+#: .\templates\homepage\main.html:5 .\templates\includes\header.html:12
 msgid "Главная"
 msgstr "Home"
 
 #: .\templates\homepage\main.html:9
-msgid "Добро пожаловать в Маджонг Авто!"
-msgstr "Welcome to Mahjong Auto!"
+msgid "Добро пожаловать в Маджонг Химия!"
+msgstr "Welcome to Mahjong Chemistry!"
 
 #: .\templates\homepage\main.html:10
-msgid "Игра, где вы можете проверить свои знания автомобильных брендов."
-msgstr "A game where you can test your knowledge of car brands."
+msgid ""
+"Уникальная игра, где вы узнаете удивительные факты о химических элементах."
+msgstr "A unique game where you will learn amazing facts about chemical elements."
+
+#: .\templates\homepage\main.html:13
+msgid "Начать игру"
+msgstr "Start game"
 
 #: .\templates\homepage\main.html:23
-msgid "Автомобильные бренды"
-msgstr "Car brands"
+msgid "Химические элементы"
+msgstr "Chemical elements"
 
 #: .\templates\homepage\main.html:25
-msgid "Узнайте бренды"
-msgstr "Learn about brands"
+msgid "Изучите элементы"
+msgstr "Study the elements"
 
 #: .\templates\homepage\main.html:26
-msgid "Играйте, чтобы проверить, как хорошо вы знаете автомобильные компании!"
-msgstr "Play to test how well you know car companies!"
+msgid ""
+"Играйте и узнавайте интересные факты о каждом химическом элементе таблицы "
+"Менделеева!"
+msgstr "Play and learn interesting facts about each chemical element of the periodic table!"
 
 #: .\templates\homepage\main.html:32
 msgid "Маджонг"
 msgstr "Mahjong"
 
 #: .\templates\homepage\main.html:34
-msgid "О Маджонге"
-msgstr "About Mahjong"
+msgid "О Маджонге Химия"
+msgstr "About Mahjong Chemistry"
 
 #: .\templates\homepage\main.html:35
 msgid ""
-"Маджонг — это традиционная китайская игра с использованием костей для всех "
-"возрастов. Проверьте свою память и скорость! На нашем сайте вы сможете "
-"поиграть в вариацию этой игры с автомобильными брендами."
+"Маджонг Химия — это увлекательная игра, где вы соединяете элементы и "
+"узнаёте их свойства и применение в реальной жизни!"
 msgstr ""
-"Mahjong is a traditional Chinese dice game for all ages. Test your memory "
-"and speed! On our site you can play a variation of this game with car brands."
+"Mahjong Chemistry is a fun game where you connect elements and "
+"learn their properties and applications in real life!"
 
 #: .\templates\homepage\main.html:41
 msgid "Победители"
 msgstr "Winners"
 
 #: .\templates\homepage\main.html:43
-msgid "Станьте чемпионом"
-msgstr "Become a champion"
+msgid "Соберите таблицу"
+msgstr "Assemble the table"
 
 #: .\templates\homepage\main.html:44
-msgid "Соревнуйтесь с друзьями и достигайте новых высот!"
-msgstr "Compete with your friends and reach new heights!"
+msgid ""
+"Завершите всю таблицу Менделеева, изучите химические элементы и станьте "
+"мастером химии!"
+msgstr ""
+"Complete the entire periodic table, study the chemical elements and become a "
+"chemistry master!"
 
 #: .\templates\includes\footer.html:5
 msgid "Маджонг: автомобильные логотипы | Все права защищены"
 msgstr "Mahjong: Car Logos | All Rights Reserved"
 
-#: .\templates\includes\header.html:15
-msgid "Выйти"
-msgstr "Log out"
+#: .\templates\includes\header.html:9
+msgid "Mahjong Chemistry"
+msgstr "Mahjong Chemistry"
 
-#: .\templates\includes\header.html:17 .\templates\users\login.html:4
-#: .\templates\users\login.html:51 .\templates\users\signup.html:62
-msgid "Войти"
-msgstr "Log in"
+#: .\templates\includes\header.html:42
+msgid "theme"
+msgstr "Theme"
 
-#: .\templates\includes\header.html:20
-msgid "Админ панель"
+#: .\templates\includes\header.html:46
+msgid "light"
+msgstr "Light"
+
+#: .\templates\includes\header.html:49
+msgid "dark"
+msgstr "Dark"
+
+#: .\templates\includes\header.html:54
+msgid "no_user"
+msgstr "No username"
+
+#: .\templates\includes\header.html:62
+msgid "admin_panel"
 msgstr "Admin panel"
 
-#: .\templates\includes\header.html:33
-msgid "Change"
-msgstr "Change"
+#: .\templates\includes\header.html:66
+msgid "exit"
+msgstr "Exit"
+
+#: .\templates\includes\header.html:71
+msgid "sign_in"
+msgstr "Authorization"
+
+#: .\templates\users\login.html:4 .\templates\users\login.html:51
+#: .\templates\users\signup.html:62
+msgid "Войти"
+msgstr "Log in"
 
 #: .\templates\users\login.html:13
 msgid "Вход в аккаунт"
@@ -313,3 +328,52 @@ msgstr "Create a new account"
 #: .\templates\users\signup.html:61
 msgid "Уже есть аккаунт?"
 msgstr "Already have an account?"
+
+#~ msgid "Основные правила:"
+#~ msgstr "Main rules:"
+
+#~ msgid "Управление:"
+#~ msgstr "Control:"
+
+#~ msgid "Перемешать плитки"
+#~ msgstr "Shuffle the tiles"
+
+#~ msgid "Отменить действие"
+#~ msgstr "Undo action"
+
+#~ msgid "Игра, где вы можете проверить свои знания автомобильных брендов."
+#~ msgstr "A game where you can test your knowledge of car brands."
+
+#~ msgid "Автомобильные бренды"
+#~ msgstr "Car brands"
+
+#~ msgid "Узнайте бренды"
+#~ msgstr "Learn about brands"
+
+#~ msgid ""
+#~ "Играйте, чтобы проверить, как хорошо вы знаете автомобильные компании!"
+#~ msgstr "Play to test how well you know car companies!"
+
+#~ msgid ""
+#~ "Маджонг — это традиционная китайская игра с использованием костей для "
+#~ "всех возрастов. Проверьте свою память и скорость! На нашем сайте вы "
+#~ "сможете поиграть в вариацию этой игры с автомобильными брендами."
+#~ msgstr ""
+#~ "Mahjong is a traditional Chinese dice game for all ages. Test your memory "
+#~ "and speed! On our site you can play a variation of this game with car "
+#~ "brands."
+
+#~ msgid "Станьте чемпионом"
+#~ msgstr "Become a champion"
+
+#~ msgid "Соревнуйтесь с друзьями и достигайте новых высот!"
+#~ msgstr "Compete with your friends and reach new heights!"
+
+#~ msgid "Выйти"
+#~ msgstr "Log out"
+
+#~ msgid "Админ панель"
+#~ msgstr "Admin panel"
+
+#~ msgid "Change"
+#~ msgstr "Change"
