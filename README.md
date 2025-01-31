@@ -95,7 +95,7 @@ python3.8 -m venv venv
 ---
 
 ### Развернутый сайт
-[https://mario12508.pythonanywhere.com/](https://mario12508.pythonanywhere.com/)
+[https://mahjongchemistry.pythonanywhere.com/](https://mahjongchemistry.pythonanywhere.com/)
 
 ---
 
